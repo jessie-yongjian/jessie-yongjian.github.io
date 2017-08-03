@@ -1,0 +1,314 @@
+//  引入 base
+@import 'base.scss';
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.wjs-layout {
+  //height: 2000px;
+  .header {
+    height: 40px;
+    .row {
+      margin: 0;
+      width: 100%;
+      div {
+
+        line-height: 40px;
+        height: 40px;
+        text-align: center;
+        a {
+          color: gray;
+        }
+      }
+      .cole-parent {
+        position: relative;
+        img {
+          position: absolute;
+          top: 40px;
+          left: 40px;
+          z-index: 998;
+          display: none;
+        }
+        a:hover {
+          img {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  //导航开始
+  .wjs-navbar {
+    padding: 0 40px;
+    .wjs-navbar-content {
+      .wjs-nav-icon {
+        margin-bottom: 3px;
+        span:nth-child(1) {
+          color: red;
+          font-size: 50px;
+          transform: translateY(-35px);
+        }
+        span:nth-child(2) {
+          color: black;
+          font-size: 70px;
+          transform: translateY(-25px)
+        }
+      }
+    }
+    .wjs-ul-nav li:hover {
+      border-bottom: 3px solid red;
+    }
+  }
+}
+
+//保障区
+.wjs-protect {
+  padding: 30px 250px;
+  .media {
+    color: gray;
+    padding-bottom: 20px;
+    cursor: pointer;
+    .media-left a {
+      font-size: 30px;
+      line-height: 44px;
+      color: gray;
+      text-decoration: none;
+    }
+    .media-left a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .media:hover {
+    .media-left a {
+      color: red;
+
+    }
+    .media-body {
+      color: red;
+      text-decoration: underline;
+    }
+  }
+}
+
+//预约区
+.appointment {
+  padding: 0px 50px;
+  height: 44px;
+  line-height: 40px;
+  border-bottom: 2px dotted gray;
+  border-top: 2px dotted gray;
+  .left {
+    a {
+      color: red;
+      border-bottom: 1px dotted red;
+      text-decoration: none;
+    }
+  }
+  .right a {
+    color: gray;
+  }
+  .right:hover {
+    a {
+      color: red;
+      cursor: pointer;
+    }
+  }
+}
+
+//Tab栏
+.investment .nav-tabs li:hover a {
+  background-color: transparent;
+}
+
+.investment .nav-tabs li a {
+  border: transparent;
+  color: gray;
+}
+
+.investment .nav-tabs li.active a {
+  border: transparent;
+  border-bottom: 3px solid red;
+}
+
+//tab盒子内容
+.investment .tab-content {
+
+  .syj {
+    padding: 10px;
+    a {
+      height: 150px;
+      width: 100%;
+      color: gray;
+      text-decoration: none;
+      box-shadow: 3px 3px 5px hotpink;
+      display: flex;
+      .tab-left {
+        flex: 1;
+        h3 {
+          width: 100%;
+          text-align: center;
+          margin: 0;
+          padding: 10px;
+        }
+        .tab-content-down {
+          display: flex;
+          justify-content: space-between;
+          .tab-content-down-l {
+            padding: 10px;
+            p {
+              margin: 0;
+            }
+          }
+          .tab-content-down-r {
+            padding: 10px;
+            p {
+              margin: 0;
+              text-align: right;
+            }
+          }
+        }
+      }
+      .tab-right {
+        width: 20%;
+        border-left: 1px dotted black;
+        height: 150px;
+        text-align: center;
+        line-height: 150px;
+        position: relative;
+        p {
+          height: 20px;
+          margin: 0;
+          display: block;
+        }
+        .syj-m {
+          margin-top: -10px;
+          height: 30px;
+        }
+        span:nth-child(1) {
+          border: 1px solid green;
+          color: green;
+          padding: 4px;
+          margin-top: 10px;
+        }
+        span:nth-child(2) {
+          border: 1px solid hotpink;
+          color: hotpink;
+          padding: 4px;
+          margin-top: 10px;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          top: -10px;
+          left: -10px;
+          background-color: white;
+          border-radius: 50%;
+          border-bottom: 1px solid #000;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          bottom: -10px;
+          left: -10px;
+          background-color: white;
+          border-radius: 50%;
+          border-top: 1px solid #000;
+        }
+      }
+    }
+    a.syj-1 {
+      background-color: red;
+      color: white;
+      &::before {
+        font-size: 40px;
+        position: absolute;
+      }
+    }
+  }
+
+}
+
+//table主要内容区
+#syj-wjs-ul {
+  li {
+    padding: 20px 20px;
+    a {
+      font-size: 50px;
+      color: white;
+      background-color: gray;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        background-color: red;
+        color: white;
+      }
+    }
+  }
+}
+
+.syj-wjs {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  .row > div:nth-of-type(2) h2 {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    position: relative;
+    &::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      position: absolute;
+      border: 1px solid #000;
+      bottom: -5px;
+      right: -10px;
+    }
+  }
+  .syj-tab-content{
+    div{
+      ul{
+        li{
+          padding: 10px 0 0 0 ;
+        }
+      }
+    }
+  }
+}
+
+//页脚部分
+.foot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  #foot{
+    ul{
+      display: flex;
+      //flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      li{
+        a{
+          font-size: 100px;
+          color: gray;
+          text-underline: none;
+        }
+      }
+    }
+  }
+}

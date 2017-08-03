@@ -1,0 +1,430 @@
+@charset "UTF-8";
+/* 导入 字体文件 */
+@font-face {
+  font-family: 'wjsfont';
+  src: url("../fonts/MiFie-Web-Font.eot");
+  src: url("../fonts/MiFie-Web-Font.eot?#iefix") format("embedded-opentype"), url("../fonts/MiFie-Web-Font.woff") format("woff"), url("../fonts/MiFie-Web-Font.ttf") format("truetype"), url("../fonts/MiFie-Web-Font.svg") format("svg");
+}
+/* 定义 使用的class */
+.wjsfont {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'wjsfont';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.wjsfont-logo::before {
+  content: '\e920';
+}
+
+.wjsfont-name::before {
+  content: '\e921';
+}
+
+.wjsfont-e903::before {
+  content: '\e903';
+}
+
+.wjsfont-e901::before {
+  content: '\e901';
+}
+
+.wjsfont-e904::before {
+  content: '\e904';
+}
+
+.wjsfont-e905::before {
+  content: '\e905';
+}
+
+.wjsfont-e902::before {
+  content: '\e902';
+}
+
+/* 添加 产品列表的 文字样式 */
+.wjsfont-e915::before {
+  content: '\e915';
+}
+
+.wjsfont-new01::before {
+  content: "\e90e";
+}
+
+.wjsfont-new02::before {
+  content: "\e90f";
+}
+
+.wjsfont-new03::before {
+  content: "\e910";
+}
+
+.wjsfont-new04::before {
+  content: "\e911";
+}
+
+/* 网页 最下方的 合作单位 */
+.wjsfont-partner01::before {
+  content: "\e946";
+}
+
+.wjsfont-partner02::before {
+  content: "\e92f";
+}
+
+.wjsfont-partner03::before {
+  content: "\e92e";
+}
+
+.wjsfont-partner04::before {
+  content: "\e92a";
+}
+
+.wjsfont-partner05::before {
+  content: "\e929";
+}
+
+.wjsfont-partner06::before {
+  content: "\e931";
+}
+
+.wjsfont-partner07::before {
+  content: "\e92c";
+}
+
+.wjsfont-partner08::before {
+  content: "\e92b";
+}
+
+.wjsfont-partner09::before {
+  content: "\e92d";
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.wjs-layout .header {
+  height: 40px;
+}
+.wjs-layout .header .row {
+  margin: 0;
+  width: 100%;
+}
+.wjs-layout .header .row div {
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+}
+.wjs-layout .header .row div a {
+  color: gray;
+}
+.wjs-layout .header .row .cole-parent {
+  position: relative;
+}
+.wjs-layout .header .row .cole-parent img {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 998;
+  display: none;
+}
+.wjs-layout .header .row .cole-parent a:hover img {
+  display: block;
+}
+.wjs-layout .wjs-navbar {
+  padding: 0 40px;
+}
+.wjs-layout .wjs-navbar .wjs-navbar-content .wjs-nav-icon {
+  margin-bottom: 3px;
+}
+.wjs-layout .wjs-navbar .wjs-navbar-content .wjs-nav-icon span:nth-child(1) {
+  color: red;
+  font-size: 50px;
+  -webkit-transform: translateY(-35px);
+      -ms-transform: translateY(-35px);
+          transform: translateY(-35px);
+}
+.wjs-layout .wjs-navbar .wjs-navbar-content .wjs-nav-icon span:nth-child(2) {
+  color: black;
+  font-size: 70px;
+  -webkit-transform: translateY(-25px);
+      -ms-transform: translateY(-25px);
+          transform: translateY(-25px);
+}
+.wjs-layout .wjs-navbar .wjs-ul-nav li:hover {
+  border-bottom: 3px solid red;
+}
+
+.wjs-protect {
+  padding: 30px 250px;
+}
+.wjs-protect .media {
+  color: gray;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+.wjs-protect .media .media-left a {
+  font-size: 30px;
+  line-height: 44px;
+  color: gray;
+  text-decoration: none;
+}
+.wjs-protect .media .media-left a:hover {
+  text-decoration: underline;
+}
+.wjs-protect .media:hover .media-left a {
+  color: red;
+}
+.wjs-protect .media:hover .media-body {
+  color: red;
+  text-decoration: underline;
+}
+
+.appointment {
+  padding: 0px 50px;
+  height: 44px;
+  line-height: 40px;
+  border-bottom: 2px dotted gray;
+  border-top: 2px dotted gray;
+}
+.appointment .left a {
+  color: red;
+  border-bottom: 1px dotted red;
+  text-decoration: none;
+}
+.appointment .right a {
+  color: gray;
+}
+.appointment .right:hover a {
+  color: red;
+  cursor: pointer;
+}
+
+.investment .nav-tabs li:hover a {
+  background-color: transparent;
+}
+
+.investment .nav-tabs li a {
+  border: transparent;
+  color: gray;
+}
+
+.investment .nav-tabs li.active a {
+  border: transparent;
+  border-bottom: 3px solid red;
+}
+
+.investment .tab-content .syj {
+  padding: 10px;
+}
+.investment .tab-content .syj a {
+  height: 150px;
+  width: 100%;
+  color: gray;
+  text-decoration: none;
+  box-shadow: 3px 3px 5px hotpink;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.investment .tab-content .syj a .tab-left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.investment .tab-content .syj a .tab-left h3 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+.investment .tab-content .syj a .tab-left .tab-content-down {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.investment .tab-content .syj a .tab-left .tab-content-down .tab-content-down-l {
+  padding: 10px;
+}
+.investment .tab-content .syj a .tab-left .tab-content-down .tab-content-down-l p {
+  margin: 0;
+}
+.investment .tab-content .syj a .tab-left .tab-content-down .tab-content-down-r {
+  padding: 10px;
+}
+.investment .tab-content .syj a .tab-left .tab-content-down .tab-content-down-r p {
+  margin: 0;
+  text-align: right;
+}
+.investment .tab-content .syj a .tab-right {
+  width: 20%;
+  border-left: 1px dotted black;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  position: relative;
+}
+.investment .tab-content .syj a .tab-right p {
+  height: 20px;
+  margin: 0;
+  display: block;
+}
+.investment .tab-content .syj a .tab-right .syj-m {
+  margin-top: -10px;
+  height: 30px;
+}
+.investment .tab-content .syj a .tab-right span:nth-child(1) {
+  border: 1px solid green;
+  color: green;
+  padding: 4px;
+  margin-top: 10px;
+}
+.investment .tab-content .syj a .tab-right span:nth-child(2) {
+  border: 1px solid hotpink;
+  color: hotpink;
+  padding: 4px;
+  margin-top: 10px;
+}
+.investment .tab-content .syj a .tab-right::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -10px;
+  left: -10px;
+  background-color: white;
+  border-radius: 50%;
+  border-bottom: 1px solid #000;
+}
+.investment .tab-content .syj a .tab-right::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: -10px;
+  left: -10px;
+  background-color: white;
+  border-radius: 50%;
+  border-top: 1px solid #000;
+}
+.investment .tab-content .syj a.syj-1 {
+  background-color: red;
+  color: white;
+}
+.investment .tab-content .syj a.syj-1::before {
+  font-size: 40px;
+  position: absolute;
+}
+
+#syj-wjs-ul li {
+  padding: 20px 20px;
+}
+#syj-wjs-ul li a {
+  font-size: 50px;
+  color: white;
+  background-color: gray;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#syj-wjs-ul li a:hover {
+  background-color: red;
+  color: white;
+}
+
+.syj-wjs {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.syj-wjs .row > div:nth-of-type(2) h2 {
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  position: relative;
+}
+.syj-wjs .row > div:nth-of-type(2) h2::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid #000;
+  bottom: -5px;
+  right: -10px;
+}
+.syj-wjs .syj-tab-content div ul li {
+  padding: 10px 0 0 0;
+}
+
+.foot {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.foot #foot ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.foot #foot ul li a {
+  font-size: 100px;
+  color: gray;
+  text-underline: none;
+}
