@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+//去除下划线，点击高亮
+a,span{
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+ul,ol{
+  list-style: none;
+}
+//去除输入框的外边距和轮廓
+input{
+  border: none;
+  outline: none;
+}
+//img变为块级元素
+img{
+  display: block;
+}
