@@ -1,0 +1,57 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+  clear: both;
+}
+
+/*
+  移动web开发,虽然浏览器的 内核 都是 webkit
+  但是不同的浏览器开发厂商 ,可能会为浏览器添加一些 特殊的 独有样式
+  为了清除不同浏览器带来的显示差异 我们有一个 比较通用的样式 normalize.css
+*/
+.bt {
+  border-top: 1px solid #E0E0E0;
+}
+
+.bb {
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.bl {
+  border-left: 1px solid #E0E0E0;
+}
+
+.br {
+  border-right: 1px solid #E0E0E0;
+}

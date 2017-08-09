@@ -1,0 +1,292 @@
+@import 'normalize6.0.scss';
+@import 'base.scss';
+//顶部区域
+$jdRed:rgb(201, 21, 35);
+header {
+    height: 40px;
+//  position: relative;
+    position: fixed;
+    z-index: 998;
+    padding: 0 60px;
+    width: 100%;
+    background: rgba(201, 21, 35,0);
+//  background-color: $jdRed;
+    a {
+        position: absolute;
+        display: block;
+        top: 0;
+        text-align: center;
+        color: white;
+        &:first-child {
+            left: 0px;
+            background-image: url(../images/sprites.png);
+            background-size: 200px 200px;
+            background-position: 0px -109px;
+            height: 21px;
+            width: 60px;
+            margin-top: 10px;
+        }
+        &:last-child {
+            right: 0px;
+            height: 100%;
+            line-height: 40px;
+            width: 50px;
+        }
+    }
+    input {
+        width: 100%;
+        border-radius: 20px;
+        height: 30px;
+        margin-top: 5px;
+        //      去除边框
+        border: none;
+        //      去除轮廓
+        outline: none;
+        padding-left: 20px;
+    }
+    .search-icon{
+            background-image: url(../images/sprites.png);
+            background-size: 200px 200px;
+            background-position: -57px -109px;
+            height: 21px;
+            width: 60px;
+            margin-top: 10px;
+            position: absolute;
+    }
+}
+
+//轮播图
+.jd-banner {
+    overflow: hidden;
+    position: relative;
+    .banner-imgs {
+        width: 1000%;
+        transform: translateX(-10%);
+        li {
+            width: 10%;
+            float: left;
+            a {
+                width: 100%;
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .banner-index {
+        position: absolute;
+        bottom: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        li {
+            float: left;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 3px;
+            background-color: white;
+            cursor: pointer;
+            &.current {
+                background-color: $jdRed;
+            }
+        }
+    }
+}
+
+//导航nav
+nav {
+    padding: 10px 0;
+    ul {
+        display: flex;
+        //      运行换行
+        flex-wrap: wrap;
+        li {
+            float: left;
+            width: 25%;
+            a {
+                display: block;
+                width: 100%;
+                img {
+                    width: 60%;
+                    margin: 0 auto;
+                }
+            }
+            p {
+                padding: 10px 0;
+                text-align: center;
+            }
+        }
+    }
+}
+
+//main主体内容
+main {
+    padding: 10px 5px 0;
+    border: 2px solid pink;
+    section {
+        min-height: 100px;
+        margin-bottom: 10px;
+        border-bottom: 5px solid #eeeeee;
+        .top {
+            height: 32px;
+            //          border: 1px solid #000;
+            border-bottom: 3px solid #eeeeee;
+            .top-left {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .second-kill {
+                    display: flex;
+                    .clock {
+                        background-image: url(../images/seckill-icon.png);
+                        background-size: 20px 25px;
+                        height: 25px;
+                        width: 20px;
+                        margin-top: -5px;
+                    }
+                    span:nth-child(2) {
+                        margin: 0 5px;
+                        color: $jdRed;
+                    }
+                    .kill-time {
+                        //                      display: flex;
+                        li {
+                            float: left;
+                            background-color: black;
+                            margin: 0 2px;
+                            color: white;
+                            padding: 0 2px;
+                        }
+                        li:nth-child(3n) {
+                            color: black;
+                            background-color: #fff;
+                        }
+                    }
+                }
+                .more {
+                    padding-right: 10px;
+                }
+            }
+        }
+        .buttom {
+            ul {
+                display: flex;
+                padding-top: 10px;
+                li {
+                    flex: 1;
+                    a {
+                        //                      width: 100%;
+                        display: block;
+                        img {
+                            border-radius: 10px;
+                            width: 60%;
+                            margin: 0 auto;
+                        }
+                    }
+                    p {
+                        text-align: center;
+                        padding: 5px;
+                    }
+                    p:first-of-type {
+                        color: $jdRed;
+                    } // 最后一个个p
+                    p:last-of-type {
+                        color: gray;
+                        text-decoration: line-through;
+                    }
+                }
+                li:nth-child(2) {
+                    a {
+                        border-left: 3px solid red;
+                        border-right: 3px solid red;
+                    }
+                }
+            }
+        }
+    }
+    //  京东超市
+    section {
+        .top {
+            padding-left: 5px;
+            h3 {
+                font-size: 18px;
+                font-weight: normal;
+                color: darkgray;
+                border-left: 3px solid $jdRed;
+                padding-left: 5px;
+            }
+        }
+        .buttom {
+            display: flex;
+            .a1 {
+                flex: 1;
+                a {
+                    height: 100%;
+                    width: 100%;
+                    display: block;
+                    img {
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+            .a2 {
+                width: 50%;
+                a {
+                    width: 100%;
+                    display: block;
+                    img {
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//footer页脚部分
+//字体图标
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), url('../font/iconfont.woff') format('woff'), url('../font/iconfont.ttf') format('truetype'), url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    div {
+        flex: 1;
+        width: 20%;
+        a {
+            display: block;
+            margin-top: 5px;
+            width: 100%;
+            text-align: center;
+            color: gray;
+            p {
+                padding-bottom: 5px;
+                width: 100%;
+                text-align: center;
+                color: gray;
+            }
+        }
+        a.active {
+            color: $jdRed;
+            p {
+                color: $jdRed;
+            }
+        }
+    }
+}
